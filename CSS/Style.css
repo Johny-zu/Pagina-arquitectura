@@ -1,0 +1,305 @@
+/********************************/
+/*Estilo del html estres  		*/
+/********************************/
+
+/*resposibidad*/
+@media(max-width: 840px){
+	div.contenido{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media(max-width: 600px){
+	div.contenido{
+		grid-template-columns: repeat(1	, 1fr);
+	}
+}
+
+/***************************************/
+/*Formato para el body				   */
+/***************************************/
+body.pag-Index{
+	background-image:url("../IMG/fondo-index.jpg");
+    background-size:100%;
+    background-attachment: fixed;
+}
+
+body.unidades{
+	background-color: rgb(145, 145, 247);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+/***********************************/
+/*Este muestra la cabecera del html*/
+/*de manera general*/
+/***********************************/
+header.parte-superior-index{
+	width: 100%;
+	overflow: hidden;
+	background: #252932;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+/*********************************/
+/*Clase creada para centrar todo */
+/*el contenido de manera correcta*/
+/*********************************/
+.wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*********************************/
+/*headers personalizados del html*/
+/*********************************/
+header .parte-superior-index{
+	color: #f2f2f2;
+	font-size: 50px;
+	line-height: 100px;
+	float: left;
+}
+
+header nav{
+	float: right;
+	line-height: 200px;
+}
+
+header nav a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	line-height: normal;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.06s ease-in-out;
+}
+
+header nav a:hover{
+	background: #f56f3a;
+	border-radius: 50px;
+}
+
+/*division de titulos de las unidades*/
+header.cabecera-tituloUnidades{
+	background-color: #bddfbf;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
+	padding: 5px 10%;
+}
+
+
+/*Division de los temas de las unidades*/
+header.unidades{
+	background-color: #bddfbf;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
+	padding: 5px 10%;
+}
+
+header.unidades .btn button{
+	margin-left: 10px;
+	font-weight: 700;
+	color: #c557f5;
+	padding: 10px 30px;
+	background: #81f59e;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 20px;
+}
+
+header.unidades .btn button:hover{
+	background-color:#90c3e6 ;
+	color: #F9E79F;
+	transform: scale(1.2);
+}
+
+/*=====  End of Contenido de los heads  ======*/
+
+/********************************/
+/*Este bloque corresponde a la  */
+/*divisiones					*/
+/********************************/
+
+.contenedor-index{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    margin: 20px;
+	
+}
+
+.center{
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+}
+  
+.contenedor{
+	display: grid;
+    grid-template-columns: .7fr 2fr;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 150px; /* Ajuste para evitar superposición con el header */
+	padding-bottom: 20px; /* Ajuste para evitar superposición con el footer */
+  }
+  
+  .column {
+	background-color: #f2f2f2;
+	padding: 10px;
+  }
+
+.index {
+	
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.info {
+	
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.encabezado{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+/***************************************/
+/*Formato para parrafo texto base		*/
+/***************************************/
+
+a{
+	color: #fff;
+}
+
+p.titulo-index{
+	font-size: 30px;
+	font-family: arial;
+	text-align: center;
+	color: #ffffff;
+}
+
+p.indiceTitulo{
+	color:#252932;
+	font-size: 20px;
+}
+
+p.indiceSubTitulo{
+	color: #252932;
+	font-size: 14;
+}
+
+p.contenidoImagen{
+	font-size: 3rem;
+	color: #ffffff;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 8px rgba(0, 0, 0, 3.0);
+	font-family: 'Kalam', cursive;
+}
+
+font.FuenteTitulo2{
+	font-size: 50px;
+	color: #f56f3a;
+}
+
+/****************************************/
+/*Formato para imagen opaca	e imagen de */
+/*estres								*/
+/****************************************/
+section.imagenMuestra{
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px auto;
+	border-radius: 20px;
+	box-shadow: 5px 8px 12px black;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.imagenMuestra:hover {
+	transform: scale(1.1);
+	box-shadow: 13px 15px, 37px black;
+}
+
+/***************************************/
+/*Formato para Imagenes				   */
+/***************************************/
+img.imagenProgreso{
+	content: url("../IMG/Progrso.png");
+	width: 100%;
+	height: 100%;
+}
+
+img.unidad1{
+	content: url("../IMG/un1-modelosArqui.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.unidad2{
+	content: url("../IMG/un2-funcionamiento.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.unidad3{
+	content: url("../IMG/un3-chipset.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.unidad4{
+	content: url("../IMG/un4-paralelo.png");
+	width: 100%;
+	height: 100%;
+}
+
+img.practicas{
+	content: url("../IMG/practicas.jpeg");
+	width: 100%;
+	height: 100%;
+}
+
+img.reporte{
+	content: url(../IMG/Reportes.jpeg);
+	width: 100%;
+	height: 100%;
+}
+
+img.gamascom{
+	content: url(../IMG/gamas.png);
+	width: 100%;
+	height: 100%;
+}
+
+img.cotizacion{
+	content: url(../IMG/cotizacion.png);
+	width: 100%;
+	height: 100%;
+}
